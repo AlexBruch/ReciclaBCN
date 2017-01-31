@@ -8,8 +8,6 @@ public class MainActivity extends AppCompatActivity {
 
     /** AFEGIR PANTALLA D'INICI AMB LOGO **/
 
-    Button button = (Button) findViewById(R.id.button);
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

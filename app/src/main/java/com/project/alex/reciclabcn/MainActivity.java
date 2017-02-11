@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new Contenidor(), "CONTENIDORS");
+        adapter.addFragment(new MainContenidors(), "CONTENIDORS");
         adapter.addFragment(new Mapa(), "MAPA");
         viewPager.setAdapter(adapter);
     }

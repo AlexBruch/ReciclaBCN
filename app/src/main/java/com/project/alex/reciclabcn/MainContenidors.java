@@ -46,9 +46,9 @@ public class MainContenidors extends Fragment {
         contenidorList = new ArrayList<>();
         cardsAdapter = new CardsAdapter(getContext(), contenidorList);
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 2);
+        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 1);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(2, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(1, dpToPx(10), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(cardsAdapter);
 
@@ -59,46 +59,44 @@ public class MainContenidors extends Fragment {
 
     private void prepareCards() {
         int[] covers = new int[] {
-                R.drawable.album1,
-                R.drawable.album2,
-                R.drawable.album3,
-                R.drawable.album4,
-                R.drawable.album5,
-                R.drawable.album6,
-                R.drawable.album7,
-                R.drawable.album8,
-                R.drawable.album9,
-                R.drawable.album10,
-                R.drawable.album11};
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor,
+                R.drawable.contenidor};
 
-        Contenidor a = new Contenidor("True Romance", 13, covers[0]);
+        Contenidor a = new Contenidor("Paper i cartró", "#283593", covers[0]);
         contenidorList.add(a);
 
-        a = new Contenidor("Xscpae", 8, covers[1]);
+        a = new Contenidor("Envàs de vidre", "#2E7D32", covers[1]);
         contenidorList.add(a);
 
-        a = new Contenidor("Maroon 5", 11, covers[2]);
+        a = new Contenidor("Envàs lleuger", "#F9A825", covers[2]);
         contenidorList.add(a);
 
-        a = new Contenidor("Born to Die", 12, covers[3]);
+        a = new Contenidor("Orgànic", "#4E342E", covers[3]);
         contenidorList.add(a);
 
-        a = new Contenidor("Honeymoon", 14, covers[4]);
+        a = new Contenidor("Rebuig", "#424242", covers[4]);
         contenidorList.add(a);
 
-        a = new Contenidor("I Need a Doctor", 1, covers[5]);
+        a = new Contenidor("Punt verd / Deixalleria", "#C62828", covers[5]);
         contenidorList.add(a);
 
-        a = new Contenidor("Loud", 11, covers[6]);
+        a = new Contenidor("Roba", "#EF6C00", covers[6]);
         contenidorList.add(a);
 
-        a = new Contenidor("Legend", 14, covers[7]);
+        a = new Contenidor("Medicaments", "#AEEA00", covers[7]);
         contenidorList.add(a);
 
-        a = new Contenidor("Hello", 11, covers[8]);
+        a = new Contenidor("Altres", "#4527A0", covers[8]);
         contenidorList.add(a);
-
-        a = new Contenidor("Greatest Hits", 17, covers[9]);
 
         cardsAdapter.notifyDataSetChanged();
 

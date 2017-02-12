@@ -5,17 +5,16 @@ package com.project.alex.reciclabcn;
  */
 
 public class Contenidor {
-    private String name;
-    private int numOfSongs;
+    private String name, color;
     private int thumbnail;
 
     public Contenidor() {
     }
 
-    public Contenidor(String name, int numOfSongs, int thumbnail) {
+    public Contenidor(String name, String color, int thumbnail) {
         this.name = name;
-        this.numOfSongs = numOfSongs;
         this.thumbnail = thumbnail;
+        this.color = color;
     }
 
     public String getName() {
@@ -26,19 +25,19 @@ public class Contenidor {
         this.name = name;
     }
 
-    public int getNumOfSongs() {
-        return numOfSongs;
-    }
-
-    public void setNumOfSongs(int numOfSongs) {
-        this.numOfSongs = numOfSongs;
-    }
-
     public int getThumbnail() {
         return thumbnail;
     }
 
     public void setThumbnail(int thumbnail) {
         this.thumbnail = thumbnail;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 }

@@ -10,12 +10,11 @@
     <dimen name="custom_tab_layout_height">72dp</dimen>
 
     <!-- CARDS -->
-    <dimen name="fab_margin">16dp</dimen>
     <dimen name="card_margin">2dp</dimen>
-    <dimen name="card_album_radius">2dp</dimen>
+    <dimen name="card_elevation">2dp</dimen>
+    <dimen name="card_radius">10dp</dimen>
     <dimen name="card_image_height">110dp</dimen>
     <dimen name="card_image_width">110dp</dimen>
-    <dimen name="card_elevation">2dp</dimen>
     <dimen name="card_text_paddingtop">24dp</dimen>
     <dimen name="card_text_paddingleft">16dp</dimen>
     <dimen name="card_text_size">24dp</dimen>

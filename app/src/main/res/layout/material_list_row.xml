@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/thumbnail_material"
+        android:layout_alignLeft="@+id/material"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:paddingBottom="@dimen/image_padding"
+        android:paddingLeft="@dimen/image_padding"
+        android:paddingRight="@dimen/image_padding"
+        android:paddingTop="@dimen/image_padding"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/material"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>

@@ -2,9 +2,9 @@ package com.project.alex.reciclabcn;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
-import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -12,7 +12,6 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,8 +23,8 @@ import java.util.List;
 public class MainContenidors extends Fragment {
 
     private RecyclerView recyclerView;
-    private  CardsAdapter cardsAdapter;
-    private List<Contenidor> contenidorList;
+    private CardsAdapter cardsAdapter;
+    private List<Card> contenidorList;
 
     public MainContenidors() {
     }
@@ -48,7 +47,7 @@ public class MainContenidors extends Fragment {
 
         RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 1);
         recyclerView.setLayoutManager(layoutManager);
-        recyclerView.addItemDecoration(new GridSpacingItemDecoration(1, dpToPx(10), true));
+        recyclerView.addItemDecoration(new GridSpacingItemDecoration(1, dpToPx(6), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(cardsAdapter);
 
@@ -58,7 +57,7 @@ public class MainContenidors extends Fragment {
     }
 
     private void prepareCards() {
-        int[] covers = new int[] {
+        int[] covers = new int[]{
                 R.drawable.contenidor,
                 R.drawable.contenidor,
                 R.drawable.contenidor,
@@ -71,37 +70,37 @@ public class MainContenidors extends Fragment {
                 R.drawable.contenidor,
                 R.drawable.contenidor};
 
-        Contenidor a = new Contenidor("Paper i cartró", "#283593", covers[0]);
+        Card a = new Card("Paper i cartró", "#283593", covers[0]);
         contenidorList.add(a);
 
-        a = new Contenidor("Envàs de vidre", "#2E7D32", covers[1]);
+        a = new Card("Envàs de vidre", "#2E7D32", covers[1]);
         contenidorList.add(a);
 
-        a = new Contenidor("Envàs lleuger", "#F9A825", covers[2]);
+        a = new Card("Envàs lleuger", "#F9A825", covers[2]);
         contenidorList.add(a);
 
-        a = new Contenidor("Orgànic", "#4E342E", covers[3]);
+        a = new Card("Orgànic", "#4E342E", covers[3]);
         contenidorList.add(a);
 
-        a = new Contenidor("Rebuig", "#424242", covers[4]);
+        a = new Card("Rebuig", "#424242", covers[4]);
         contenidorList.add(a);
 
-        a = new Contenidor("Punt verd / Deixalleria", "#C62828", covers[5]);
+        a = new Card("Punt verd / Deixalleria", "#C62828", covers[5]);
         contenidorList.add(a);
 
-        a = new Contenidor("Roba", "#EF6C00", covers[6]);
+        a = new Card("Roba", "#EF6C00", covers[6]);
         contenidorList.add(a);
 
-        a = new Contenidor("Medicaments", "#AEEA00", covers[7]);
+        a = new Card("Medicaments", "#AEEA00", covers[7]);
         contenidorList.add(a);
 
-        a = new Contenidor("Altres", "#4527A0", covers[8]);
+        a = new Card("Altres", "#4527A0", covers[8]);
         contenidorList.add(a);
 
         cardsAdapter.notifyDataSetChanged();
 
     }
-
+    /** Numero columnes de targetes **/
     public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
 
         private int spanCount;
@@ -123,11 +122,11 @@ public class MainContenidors extends Fragment {
                 outRect.left = spacing - column * spacing / spanCount;
                 outRect.right = (column + 1) * spacing / spanCount;
 
-                if (position < spanCount) { //top edge
+                if (position < spanCount) { //Espai de d'alt
                     outRect.top = spacing;
                 }
-                outRect.bottom = spacing; //item bottom
-            }else {
+                outRect.bottom = spacing; //Espai abaix
+            } else {
                 outRect.left = column * spacing / spanCount;
                 outRect.right = spacing - (column + 1) * spacing / spanCount;
                 if (position >= spanCount) {
@@ -137,6 +136,7 @@ public class MainContenidors extends Fragment {
         }
     }
 
+    /** Espai entre targetes **/
     private int dpToPx(int dp) {
         Resources resources = getResources();
         return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, resources.getDisplayMetrics()));

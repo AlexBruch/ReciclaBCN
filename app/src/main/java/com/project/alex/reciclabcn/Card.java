@@ -4,14 +4,14 @@ package com.project.alex.reciclabcn;
  * Created by alexbruch on 11/2/17.
  */
 
-public class Contenidor {
+public class Card {
     private String name, color;
     private int thumbnail;
 
-    public Contenidor() {
+    public Card() {
     }
 
-    public Contenidor(String name, String color, int thumbnail) {
+    public Card(String name, String color, int thumbnail) {
         this.name = name;
         this.thumbnail = thumbnail;
         this.color = color;

@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn;
+package com.project.alex.reciclabcn.cards;
 
 import android.content.Context;
 import android.content.Intent;
@@ -10,8 +10,11 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.project.alex.reciclabcn.R;
+import com.project.alex.reciclabcn.lists.ListContenidor;
 
 import java.util.List;
 
@@ -40,9 +43,11 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(context, ListContenidor.class);
-                    intent.putExtra("1", name.getText().toString());
-                    context.startActivity(intent);
+                    Intent intent = new Intent(view.getContext(), ListContenidor.class);
+                    intent.putExtra("title", name.getText().toString());
+                    intent.putExtra("color1", cardView.getCardBackgroundColor());
+                    Toast.makeText(context, cardView.getCardBackgroundColor().toString(), Toast.LENGTH_LONG).show();
+                    view.getContext().startActivity(intent);
                 }
             });
         }
@@ -56,7 +61,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         /** PASEM TOT AL LAYOUT DE TARGETA **/
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.contenidor_card, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.card_contenidor, parent, false);
         return new MyViewHolder(itemView);
     }
 
@@ -65,7 +70,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
         /** PASEM TOT A LA TARGETA CORRESPONENT SEGONS POSICIO **/
         final Card contenidor = contenidorList.get(position);
         holder.name.setText(contenidor.getName());
-        holder.cardView.setBackgroundColor(Color.parseColor(contenidor.getColor()));
+        holder.cardView.setCardBackgroundColor(Color.parseColor(contenidor.getColor()));
 
         //carregar imatge fent servir la llibreria Glide
         Glide.with(context).load(contenidor.getThumbnail()).into(holder.thumbnail);

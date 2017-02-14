@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListContenidor"></activity>
+        <activity android:name=".lists.ListContenidor" />
+        <activity android:name=".MaterialDetail"></activity>
     </application>
 
 </manifest>

@@ -1,6 +1,7 @@
-package com.project.alex.reciclabcn;
+package com.project.alex.reciclabcn.lists;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,6 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.project.alex.reciclabcn.MaterialDetail;
+import com.project.alex.reciclabcn.R;
 
 import java.util.List;
 
@@ -29,6 +32,15 @@ public class MaterialsAdapter extends RecyclerView.Adapter<MaterialsAdapter.MyVi
             super(view);
             material = (TextView) view.findViewById(R.id.material);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail_material);
+
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(view.getContext(), MaterialDetail.class);
+                    intent.putExtra("material", material.getText().toString());
+                    view.getContext().startActivity(intent);
+                }
+            });
         }
     }
 
@@ -40,7 +52,7 @@ public class MaterialsAdapter extends RecyclerView.Adapter<MaterialsAdapter.MyVi
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         /** PASEM TOT AL LAYOUT A LA FILA DE LA LLISTA **/
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.material_list_row, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_material, parent, false);
         return new MyViewHolder(itemView);
     }
 

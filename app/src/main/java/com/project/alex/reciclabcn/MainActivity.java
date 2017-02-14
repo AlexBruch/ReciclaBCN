@@ -9,6 +9,8 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
+import com.project.alex.reciclabcn.cards.MainContenidors;
+
 import java.util.ArrayList;
 import java.util.List;
 

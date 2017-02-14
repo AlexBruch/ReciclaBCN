@@ -6,14 +6,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/contenidor_list"
+    tools:showIn="@layout/list_materials"
     tools:context=".MainActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/material_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:paddingTop="@dimen/list_paddingtop"
         android:scrollbars="vertical"
-        android:background="#000000"/>
+        android:background="#E8EAF6"/>
 
 </RelativeLayout>

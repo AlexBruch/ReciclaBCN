@@ -1,5 +1,5 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- MIDES SEGONS LA GUIA MATERIAL DESIGN DE GOOGLE -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
@@ -12,7 +12,7 @@
     <!-- CARDS -->
     <dimen name="card_margin">2dp</dimen>
     <dimen name="card_elevation">2dp</dimen>
-    <dimen name="card_radius">10dp</dimen>
+    <dimen name="card_radius">2dp</dimen>
     <dimen name="card_image_height">110dp</dimen>
     <dimen name="card_image_width">110dp</dimen>
     <dimen name="card_text_paddingtop">24dp</dimen>
@@ -20,5 +20,8 @@
     <dimen name="card_text_size">24dp</dimen>
     <dimen name="image_padding">16dp</dimen>
 
+    <!-- LLISTA -->
+    <dimen name="list_paddingtop">8dp</dimen>
+    <dimen name="list_image_margin_right">16dp</dimen>
 
 </resources>

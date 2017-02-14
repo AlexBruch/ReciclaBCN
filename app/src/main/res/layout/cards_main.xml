@@ -5,6 +5,6 @@
     android:layout_height="match_parent"
     android:background="@color/card_layout_background">
 
-    <include layout="@layout/content_cards" />
+    <include layout="@layout/cards_content" />
 
 </android.support.design.widget.CoordinatorLayout>

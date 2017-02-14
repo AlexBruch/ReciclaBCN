@@ -1,0 +1,56 @@
+<contenidors>
+    <item>
+        <id>1</id>
+        <contenidor>Envàs lleuger</contenidor>
+        <color>#F9A825</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>2</id>
+        <contenidor>Paper i cartró</contenidor>
+        <color>#283593</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>3</id>
+        <contenidor>Envàs de vidre</contenidor>
+        <color>#2E7D32</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>4</id>
+        <contenidor>Orgànic</contenidor>
+        <color>#4E342E</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>5</id>
+        <contenidor>Rebuig</contenidor>
+        <color>#424242</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>6</id>
+        <contenidor>Punt verd / Deixalleria</contenidor>
+        <color>#C62828</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>7</id>
+        <contenidor>Roba</contenidor>
+        <color>#EF6C00</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>8</id>
+        <contenidor>Medicaments</contenidor>
+        <color>#AEEA00</color>
+        <foto>contenidor</foto>
+    </item>
+    <item>
+        <id>9</id>
+        <contenidor>Altres</contenidor>
+        <color>#4527A0</color>
+        <foto>contenidor</foto>
+    </item>
+</contenidors>

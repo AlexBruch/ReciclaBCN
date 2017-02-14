@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn;
+package com.project.alex.reciclabcn.lists;
 
 /**
  * Created by alexbruch on 13/2/17.

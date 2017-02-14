@@ -1,11 +1,14 @@
-package com.project.alex.reciclabcn;
+package com.project.alex.reciclabcn.lists;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+
+import com.project.alex.reciclabcn.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,10 +22,13 @@ public class ListContenidor extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.contenidor_list);
+        setContentView(R.layout.list_materials);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //toolbar.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("color")));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Fletxa
+        getSupportActionBar().setDisplayShowHomeEnabled(true); //Fletxa
+        getSupportActionBar().setTitle(getIntent().getStringExtra("title"));
 
         recyclerView = (RecyclerView) findViewById(R.id.material_recycler_view);
         materialList = new ArrayList<>();
@@ -30,14 +36,13 @@ public class ListContenidor extends AppCompatActivity {
 
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
         recyclerView.setLayoutManager(layoutManager);
+        recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
         recyclerView.setAdapter(materialsAdapter);
 
         prepareMaterials();
-
-//        TextView name = (TextView) findViewById(R.id.textView2);
-//        name.setText(getIntent().getStringExtra("1"));
     }
+
 
     private void prepareMaterials() {
 

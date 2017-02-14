@@ -15,10 +15,11 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary" />
+            android:background="?attr/colorPrimary"
+            android:titleTextColor="@color/colorAccent"/>
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_contenidor_list"/>
+    <include layout="@layout/list_content_contenidor"/>
 
 </android.support.design.widget.CoordinatorLayout>

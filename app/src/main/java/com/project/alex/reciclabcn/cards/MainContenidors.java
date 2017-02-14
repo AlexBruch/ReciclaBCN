@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn;
+package com.project.alex.reciclabcn.cards;
 
 import android.content.res.Resources;
 import android.graphics.Rect;
@@ -12,6 +12,8 @@ import android.util.TypedValue;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.project.alex.reciclabcn.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -39,7 +41,7 @@ public class MainContenidors extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        View rootView = inflater.inflate(R.layout.contenidor_main, container, false);
+        View rootView = inflater.inflate(R.layout.cards_main, container, false);
 
         recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
         contenidorList = new ArrayList<>();
@@ -70,31 +72,31 @@ public class MainContenidors extends Fragment {
                 R.drawable.contenidor,
                 R.drawable.contenidor};
 
-        Card a = new Card("Paper i cartró", "#283593", covers[0]);
+        Card a = new Card("Paper i cartró", "#283593", "#E8EAF6", covers[0]);
         contenidorList.add(a);
 
-        a = new Card("Envàs de vidre", "#2E7D32", covers[1]);
+        a = new Card("Envàs de vidre", "#2E7D32", "#E8F5E9", covers[1]);
         contenidorList.add(a);
 
-        a = new Card("Envàs lleuger", "#F9A825", covers[2]);
+        a = new Card("Envàs lleuger", "#F9A825", "#FFFDE7", covers[2]);
         contenidorList.add(a);
 
-        a = new Card("Orgànic", "#4E342E", covers[3]);
+        a = new Card("Orgànic", "#4E342E", "#EFEBE9", covers[3]);
         contenidorList.add(a);
 
-        a = new Card("Rebuig", "#424242", covers[4]);
+        a = new Card("Rebuig", "#424242", "#FAFAFA", covers[4]);
         contenidorList.add(a);
 
-        a = new Card("Punt verd / Deixalleria", "#C62828", covers[5]);
+        a = new Card("Punt verd / Deixalleria", "#C62828", "#FFEBEE", covers[5]);
         contenidorList.add(a);
 
-        a = new Card("Roba", "#EF6C00", covers[6]);
+        a = new Card("Roba", "#EF6C00", "#FFF3E0", covers[6]);
         contenidorList.add(a);
 
-        a = new Card("Medicaments", "#AEEA00", covers[7]);
+        a = new Card("Medicaments", "#AEEA00", "#F1F8E9", covers[7]);
         contenidorList.add(a);
 
-        a = new Card("Altres", "#4527A0", covers[8]);
+        a = new Card("Altres", "#4527A0", "#EDE7F6", covers[8]);
         contenidorList.add(a);
 
         cardsAdapter.notifyDataSetChanged();

@@ -22,7 +22,7 @@
                 android:id="@+id/thumbnail"
                 android:layout_width="@dimen/card_image_width"
                 android:layout_height="@dimen/card_image_height"
-                android:layout_alignRight="@id/title"
+                android:layout_alignRight="@+id/title"
                 android:paddingBottom="@dimen/image_padding"
                 android:paddingLeft="@dimen/image_padding"
                 android:paddingRight="@dimen/image_padding"

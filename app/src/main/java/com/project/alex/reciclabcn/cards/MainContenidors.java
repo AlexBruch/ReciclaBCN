@@ -14,8 +14,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.project.alex.reciclabcn.R;
+import com.project.alex.reciclabcn.sqlite.ItemsDatasource;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -27,14 +27,16 @@ public class MainContenidors extends Fragment {
     private RecyclerView recyclerView;
     private CardsAdapter cardsAdapter;
     private List<Card> contenidorList;
+    private RecyclerView.LayoutManager layoutManager;
+    private ItemsDatasource itemsDatasource;
 
     public MainContenidors() {
     }
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
@@ -43,65 +45,30 @@ public class MainContenidors extends Fragment {
 
         View rootView = inflater.inflate(R.layout.cards_main, container, false);
 
-        recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
-        contenidorList = new ArrayList<>();
-        cardsAdapter = new CardsAdapter(getContext(), contenidorList);
+        itemsDatasource = new ItemsDatasource(getContext());
 
-        RecyclerView.LayoutManager layoutManager = new GridLayoutManager(getContext(), 1);
+        contenidorList = itemsDatasource.getCardsList();
+
+        // Agafar RecyclerView
+        recyclerView = (RecyclerView) rootView.findViewById(R.id.recycler_view);
+        recyclerView.setHasFixedSize(true);
+
+        // Administrador per el layout
+        layoutManager = new GridLayoutManager(getContext(), 1);
         recyclerView.setLayoutManager(layoutManager);
+
+        // Adaptador
+        cardsAdapter = new CardsAdapter(getContext(), contenidorList);
+        recyclerView.setAdapter(cardsAdapter);
         recyclerView.addItemDecoration(new GridSpacingItemDecoration(1, dpToPx(6), true));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(cardsAdapter);
 
-        prepareCards();
+
+        //contenidorList = new ArrayList<>();
 
         return rootView;
     }
 
-    private void prepareCards() {
-        int[] covers = new int[]{
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor};
-
-        Card a = new Card("Paper i cartró", "#283593", "#E8EAF6", covers[0]);
-        contenidorList.add(a);
-
-        a = new Card("Envàs de vidre", "#2E7D32", "#E8F5E9", covers[1]);
-        contenidorList.add(a);
-
-        a = new Card("Envàs lleuger", "#F9A825", "#FFFDE7", covers[2]);
-        contenidorList.add(a);
-
-        a = new Card("Orgànic", "#4E342E", "#EFEBE9", covers[3]);
-        contenidorList.add(a);
-
-        a = new Card("Rebuig", "#424242", "#FAFAFA", covers[4]);
-        contenidorList.add(a);
-
-        a = new Card("Punt verd / Deixalleria", "#C62828", "#FFEBEE", covers[5]);
-        contenidorList.add(a);
-
-        a = new Card("Roba", "#EF6C00", "#FFF3E0", covers[6]);
-        contenidorList.add(a);
-
-        a = new Card("Medicaments", "#AEEA00", "#F1F8E9", covers[7]);
-        contenidorList.add(a);
-
-        a = new Card("Altres", "#4527A0", "#EDE7F6", covers[8]);
-        contenidorList.add(a);
-
-        cardsAdapter.notifyDataSetChanged();
-
-    }
     /** Numero columnes de targetes **/
     public class GridSpacingItemDecoration extends RecyclerView.ItemDecoration {
 

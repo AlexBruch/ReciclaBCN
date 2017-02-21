@@ -18,14 +18,19 @@ import com.project.alex.reciclabcn.lists.ListContenidor;
 
 import java.util.List;
 
-
 /**
  * Created by alexbruch on 11/2/17.
+ * https://nowornever3.com/2016/03/02/sqlite-recyclerview-cardview-android/
  */
 
 public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder> {
     private Context context;
     private List<Card> contenidorList;
+
+    public CardsAdapter(Context context, List<Card> contenidorList) {
+        this.context = context;
+        this.contenidorList = contenidorList;
+    }
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
@@ -36,9 +41,9 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
 
         public MyViewHolder(View view) {
             super(view);
-            cardView = (CardView) view.findViewById(R.id.card_view);
-            name = (TextView) view.findViewById(R.id.title);
-            thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
+            this.cardView = (CardView) view.findViewById(R.id.card_view);
+            this.name = (TextView) view.findViewById(R.id.title);
+            this.thumbnail = (ImageView) view.findViewById(R.id.thumbnail);
 
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -53,11 +58,6 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
         }
     }
 
-    public CardsAdapter(Context context, List<Card> contenidorList) {
-        this.context = context;
-        this.contenidorList = contenidorList;
-    }
-
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         /** PASEM TOT AL LAYOUT DE TARGETA **/
@@ -68,9 +68,11 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
     @Override
     public void onBindViewHolder(final MyViewHolder holder, int position) {
         /** PASEM TOT A LA TARGETA CORRESPONENT SEGONS POSICIO **/
-        final Card contenidor = contenidorList.get(position);
+        Card contenidor = contenidorList.get(position);
+        //holder.itemView.setTag(contenidor);
+
         holder.name.setText(contenidor.getName());
-        holder.cardView.setCardBackgroundColor(Color.parseColor(contenidor.getColor()));
+        holder.cardView.setCardBackgroundColor(Color.parseColor(contenidor.getColor1()));
 
         //carregar imatge fent servir la llibreria Glide
         Glide.with(context).load(contenidor.getThumbnail()).into(holder.thumbnail);

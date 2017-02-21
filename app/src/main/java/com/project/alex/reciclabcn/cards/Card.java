@@ -5,17 +5,34 @@ package com.project.alex.reciclabcn.cards;
  */
 
 public class Card {
-    private String name, color, color2;
-    private int thumbnail;
+    public String id = "", thumbnail = "", name = "", color1 = "", color2 = "";
 
     public Card() {
     }
 
-    public Card(String name, String color, String color2, int thumbnail) {
+    public Card(String id, String name, String color1, String color2, String thumbnail) {
+        this.id = id;
         this.name = name;
-        this.thumbnail = thumbnail;
-        this.color = color;
+        this.color1 = color1;
         this.color2 = color2;
+        this.thumbnail = thumbnail;
+
+    }
+
+    public String getColor1() {
+        return color1;
+    }
+
+    public void setColor1(String color1) {
+        this.color1 = color1;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -26,20 +43,12 @@ public class Card {
         this.name = name;
     }
 
-    public int getThumbnail() {
+    public String getThumbnail() {
         return thumbnail;
     }
 
-    public void setThumbnail(int thumbnail) {
+    public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public String getColor2() {

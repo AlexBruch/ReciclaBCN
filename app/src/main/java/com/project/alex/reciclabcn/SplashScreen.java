@@ -38,6 +38,7 @@ public class SplashScreen extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
+            itemsDatasource.cleanContenidors();
         }
 
         @Override

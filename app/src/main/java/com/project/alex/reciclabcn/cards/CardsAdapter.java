@@ -20,7 +20,6 @@ import java.util.List;
 
 /**
  * Created by alexbruch on 11/2/17.
- * https://nowornever3.com/2016/03/02/sqlite-recyclerview-cardview-android/
  */
 
 public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder> {
@@ -75,7 +74,8 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
         holder.cardView.setCardBackgroundColor(Color.parseColor(contenidor.getColor1()));
 
         //carregar imatge fent servir la llibreria Glide
-        Glide.with(context).load(contenidor.getThumbnail()).into(holder.thumbnail);
+        //Glide.with(context).load(contenidor.getThumbnail()).into(holder.thumbnail);
+        Glide.with(context).load(R.drawable.contenidor).into(holder.thumbnail);
     }
 
     @Override

@@ -65,6 +65,10 @@ public class ItemsDatasource extends DataBaseManager{
         sqLiteDatabase.insert(CONTENIDORS_TABLE_NAME, null, values);
     }
 
+    public void cleanContenidors() {
+        sqLiteDatabase.delete(CONTENIDORS_TABLE_NAME, null, null);
+    }
+
     @Override
     public Cursor cargarCursor() {
         String[] columns = new String[]{

@@ -23,5 +23,6 @@
     <!-- LLISTA -->
     <dimen name="list_paddingtop">8dp</dimen>
     <dimen name="list_image_margin_right">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
 
 </resources>

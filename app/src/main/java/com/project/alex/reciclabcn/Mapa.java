@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -25,6 +26,7 @@ import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
 import static android.os.Build.VERSION_CODES.M;
 
 /**
@@ -41,10 +43,6 @@ public class Mapa extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.mapa, container, false);
-
-        // Assume thisActivity is the current activity
-        int permissionCheck = ContextCompat.checkSelfPermission(getActivity(),
-                Manifest.permission.ACCESS_COARSE_LOCATION);
 
         // Here, thisActivity is the current activity
         if (ContextCompat.checkSelfPermission(getActivity(),
@@ -73,9 +71,35 @@ public class Mapa extends Fragment {
             }
         }
 
+        // Here, thisActivity is the current activity
+        if (ContextCompat.checkSelfPermission(getActivity(),
+                Manifest.permission.ACCESS_FINE_LOCATION)
+                != PackageManager.PERMISSION_GRANTED) {
+
+            // Should we show an explanation?
+            if (ActivityCompat.shouldShowRequestPermissionRationale(getActivity(),
+                    Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+                // Show an expanation to the user *asynchronously* -- don't block
+                // this thread waiting for the user's response! After the user
+                // sees the explanation, try again to request the permission.
+
+            } else {
+
+                // No explanation needed, we can request the permission.
+
+                ActivityCompat.requestPermissions(getActivity(),
+                        new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                        1);
+
+                // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                // app-defined int constant. The callback method gets the
+                // result of the request.
+            }
+        }
+
         mapView = (MapView) rootView.findViewById(R.id.mapView);
         mapView.onCreate(savedInstanceState);
-
         mapView.onResume(); // per visualitzar el mapa inmediatament
 
         try {
@@ -90,6 +114,10 @@ public class Mapa extends Fragment {
             public void onMapReady(GoogleMap map) {
                 googleMap = map;
 
+                ActivityCompat.requestPermissions(getActivity(),
+                        new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+                        1);
+
                 if ( Build.VERSION.SDK_INT >= 23 &&
                         ContextCompat.checkSelfPermission( getContext(), android.Manifest.permission.ACCESS_FINE_LOCATION ) != PackageManager.PERMISSION_GRANTED &&
                         ContextCompat.checkSelfPermission( getContext(), android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -103,8 +131,9 @@ public class Mapa extends Fragment {
                 googleMap.addMarker(new MarkerOptions().position(barcelona).title("Barcelona").snippet("Barcelona city"));
 
                 // Posicionar la camera a la posició de la ciutat
-                CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(5).build();
+                CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(12).build();
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
             }
         });
 
@@ -126,6 +155,7 @@ public class Mapa extends Fragment {
 
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
+                    Toast.makeText(getActivity(), "Permis de localització denegat", Toast.LENGTH_LONG).show();
                 }
                 return;
             }

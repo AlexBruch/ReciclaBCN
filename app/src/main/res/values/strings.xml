@@ -2,4 +2,8 @@
     <string name="app_name">Recicla BCN</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_fsfsfsffsfs">fsfsfsffsfs</string>
+    <string name="title_activity_info">Info</string>
+    <string name="reciclar">text per què reciclar?</string>
+    <string name="consells">text consells medi ambient</string>
+    <string name="infoapp">text informació sobre aplicació</string>
 </resources>

@@ -5,15 +5,17 @@ package com.project.alex.reciclabcn.lists;
  */
 
 public class Material {
-    private String material;
-    private int thumbnail;
+    private String material, thumbnail, contenidor;
+    private int id;
 
     public Material() {
     }
 
-    public Material(String material, int thumbnail) {
+    public Material(int id, String material, String thumbnail, String contenidor) {
+        this.id = id;
         this.material = material;
         this.thumbnail = thumbnail;
+        this.contenidor = contenidor;
     }
 
     public String getMaterial() {
@@ -24,11 +26,27 @@ public class Material {
         this.material = material;
     }
 
-    public int getThumbnail() {
+    public String getThumbnail() {
         return thumbnail;
     }
 
-    public void setThumbnail(int thumbnail) {
+    public void setThumbnail(String thumbnail) {
         this.thumbnail = thumbnail;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getContenidor() {
+        return contenidor;
+    }
+
+    public void setContenidor(String contenidor) {
+        this.contenidor = contenidor;
     }
 }

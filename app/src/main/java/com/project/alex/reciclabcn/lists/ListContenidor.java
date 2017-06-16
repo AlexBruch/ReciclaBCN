@@ -3,25 +3,39 @@ package com.project.alex.reciclabcn.lists;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.project.alex.reciclabcn.R;
+import com.project.alex.reciclabcn.sqlite.ItemsDatasource;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class ListContenidor extends AppCompatActivity {
 
-    private List<Material> materialList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MaterialsAdapter materialsAdapter;
+    private List<Material> materialList;
+    private RecyclerView.LayoutManager layoutManager;
+    private ItemsDatasource itemsDatasource;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_materials);
+
+        itemsDatasource = new ItemsDatasource(getApplicationContext());
+        /**
+         * passar color material aquí!!!
+         * */
+        materialList = itemsDatasource.getMaterialsList(getIntent().getStringExtra("title"));
+
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         //toolbar.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("color")));
         setSupportActionBar(toolbar);
@@ -29,65 +43,47 @@ public class ListContenidor extends AppCompatActivity {
         getSupportActionBar().setDisplayShowHomeEnabled(true); //Fletxa
         getSupportActionBar().setTitle(getIntent().getStringExtra("title"));
 
+        // Agafar recyclerview
         recyclerView = (RecyclerView) findViewById(R.id.material_recycler_view);
-        materialList = new ArrayList<>();
-        materialsAdapter = new MaterialsAdapter(getApplicationContext(), materialList);
+        recyclerView.setHasFixedSize(true);
 
-        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+        // Administrar layout
+        layoutManager = new GridLayoutManager(getApplicationContext(), 1);
         recyclerView.setLayoutManager(layoutManager);
+
+        // Adaptador
+        materialsAdapter = new MaterialsAdapter(getApplicationContext(), materialList);
+        recyclerView.setAdapter(materialsAdapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
-        recyclerView.setAdapter(materialsAdapter);
-
-        prepareMaterials();
     }
 
+    /** MENÚ TRES PUNTS VERTICALS
+     *  carpeta menu -> menu.xml
+     * **/
 
-    private void prepareMaterials() {
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
 
-        int[] covers = new int[]{
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor,
-                R.drawable.contenidor};
+    /** CLICLAR ALS ÍTEMS DE MENÚ **/
 
-        Material material = new Material("Paper", covers[0]);
-        materialList.add(material);
-
-        material = new Material("Cartró", covers[1]);
-        materialList.add(material);
-
-        material = new Material("Etiqueta", covers[2]);
-        materialList.add(material);
-
-        material = new Material("Més paper", covers[3]);
-        materialList.add(material);
-
-        material = new Material("Més cartró", covers[4]);
-        materialList.add(material);
-
-        material = new Material("Diari", covers[5]);
-        materialList.add(material);
-
-        material = new Material("Bossa de paper o cartró", covers[6]);
-        materialList.add(material);
-
-        material = new Material("Capsa de cartró", covers[7]);
-        materialList.add(material);
-
-        material = new Material("Revista", covers[8]);
-        materialList.add(material);
-
-        material = new Material("Sobre de paper", covers[9]);
-        materialList.add(material);
-
-        materialsAdapter.notifyDataSetChanged();
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.item1:
+                Toast.makeText(ListContenidor.this, "Per què reciclar?", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.item2:
+                Toast.makeText(ListContenidor.this, "Consells medi ambient", Toast.LENGTH_LONG).show();
+                return true;
+            case R.id.item3:
+                Toast.makeText(ListContenidor.this, "Informació sobre l'app", Toast.LENGTH_LONG).show();
+                return true;
+            default : return super.onOptionsItemSelected(item);
+        }
     }
 }

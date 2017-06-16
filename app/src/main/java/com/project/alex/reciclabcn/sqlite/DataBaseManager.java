@@ -10,15 +10,15 @@ import android.database.sqlite.SQLiteDatabase;
 
 public abstract class DataBaseManager {
 
-    private ItemsOpenHelper itemsOpenHelper;
+    private DBHelper dbHelper;
     private SQLiteDatabase sqLiteDatabase;
 
     public DataBaseManager() {
     }
 
     public DataBaseManager(Context context) {
-        itemsOpenHelper = new ItemsOpenHelper(context);
-        sqLiteDatabase = itemsOpenHelper.getWritableDatabase();
+        dbHelper = new DBHelper(context);
+        sqLiteDatabase = dbHelper.getWritableDatabase();
     }
 
     public void closeDB() {
@@ -27,12 +27,14 @@ public abstract class DataBaseManager {
 
     abstract public Cursor cargarCursor();
 
-    public ItemsOpenHelper getItemsOpenHelper() {
-        return itemsOpenHelper;
+    abstract public  Cursor cargarCursorM(String color);
+
+    public DBHelper getDbHelper() {
+        return dbHelper;
     }
 
-    public void setItemsOpenHelper(ItemsOpenHelper itemsOpenHelper) {
-        this.itemsOpenHelper = itemsOpenHelper;
+    public void setDbHelper(DBHelper dbHelper) {
+        this.dbHelper = dbHelper;
     }
 
     public SQLiteDatabase getSqLiteDatabase() {

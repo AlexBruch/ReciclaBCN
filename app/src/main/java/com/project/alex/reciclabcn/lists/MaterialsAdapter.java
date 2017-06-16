@@ -60,10 +60,11 @@ public class MaterialsAdapter extends RecyclerView.Adapter<MaterialsAdapter.MyVi
     public void onBindViewHolder(MyViewHolder holder, int position) {
         /** PASEM TOT A LA FILA CORRESPONENT SEGONS POSICIO **/
         Material material = materialList.get(position);
-        holder.material.setText(material.getMaterial().toString());
+        holder.material.setText(material.getMaterial());
 
         //carregar imatge fent servir la llibreria Glide
-        Glide.with(context).load(material.getThumbnail()).into(holder.thumbnail);
+        //Glide.with(context).load(material.getThumbnail()).into(holder.thumbnail);
+        Glide.with(context).load(R.drawable.contenidor).into(holder.thumbnail);
     }
 
     @Override

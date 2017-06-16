@@ -63,5 +63,688 @@
       "color2" : "#4527A0",
       "thumbnail" : "contenidor"
     }
+  ],
+
+  "materials" : [
+    {
+      "material" : "Caixa de cartró",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Diari",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Bossa de paper",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Sobre de paper",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Paper",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Etiqueta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Cartolina",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Llibreta (sense espiral)",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Revista",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Envasos de cartro per a ous",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Propaganda",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Paper triturat",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Paper i cartró"
+    },
+    {
+      "material" : "Ampolla",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Llauna",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Bric de llet",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Aerosols",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Ampolla de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Bossa aperitiu",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Bossa de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Capsa de puros",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Desodorant amb roll-on",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Embolcalls de film i plata",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Got de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Iogurt de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Llaunes fèrriques",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Precinte ampolles vi i cava",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Safates de porexpan",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Tapes de pot",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Taps de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Taps metàl·lics",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Tub de dentrifici",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Xarxa de fruita",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs lleuger"
+    },
+    {
+      "material" : "Calçat",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Roba"
+    },
+    {
+      "material" : "Cordons de sabata",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Roba"
+    },
+    {
+      "material" : "Draps",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Roba"
+    },
+    {
+      "material" : "Mitges",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Roba"
+    },
+    {
+      "material" : "Roba",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Roba"
+    },
+    {
+      "material" : "Medicaments",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Medicaments"
+    },
+    {
+      "material" : "Ampolla de vidre",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs de vidre"
+    },
+    {
+      "material" : "Iogurt de vidre",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs de vidre"
+    },
+    {
+      "material" : "Pot de vidre",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Envàs de vidre"
+    },
+    {
+      "material" : "Aliment malmès en safata",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Cafè (filtre)",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Cafè (marro)",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Closques",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Escuradents de fusta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Excrements",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Flors",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Gespa",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Infusions (bossetes)",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Llumins de fusta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Paper magdalenes",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Pinyols",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Restes de menjar",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Taps de suro",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Terra plantes",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Tovalló paper brut",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Orgànic"
+    },
+    {
+      "material" : "Agulles de cosir",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Baieta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Bastonets orelles",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Bijuteria i complements",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Bolquers",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Compreses",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Tampons",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Bombeta de filament",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Cendrer de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Cendrer de porcellana",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Cera",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Clips metàl·lics",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Cotó fluix",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Etiqueta adhesiva",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Goma esborrar",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Got de vidre trencat",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Llapis",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Llima d'ungles",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Maquineta d'afeitar",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Maquineta fer punta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Pal d'escombra",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Pal de fregar",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Palleta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Paper plastificat",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Pols d'escombrar",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Precinte adhesiu",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Preservatiu",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Puntes de cigarret",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Raspall de dents",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Sorra de gat",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Ulleres",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Xiclet",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Xinxeta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Xumet",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Rebuig"
+    },
+    {
+      "material" : "Auriculars",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Bateria de cotxe",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Bolígrafs",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Bombeta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "CD's/DVD's",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Cassola",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Cendrer de vidre",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Cistell o cabàs",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Coberts",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Disc de vinil",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Espiral llibreta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Fluorescent",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Fotos",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Galleda",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Gerro ceràmica",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Joguines",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Matalàs",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Mirall",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Moble de fusta",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Mànega",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Mòbil i accessoris",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Nevera",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Oli de cotxe",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Ordinador",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Paella",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Penjador de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Petits aparells elèctrics i electrònics",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Pintura",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Pinzell brut",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Plats trencats",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Pneumàtic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Porró de vidre",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Radiografia",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Rentadora",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Rodet de fotografies",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Runa",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Televisió",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Termòmetre de mercuri",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Test ceràmica",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Test de plàstic",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Tub de PVC",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Tòner",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Vernís",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Vidre de finestra",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    },
+    {
+      "material" : "Vidre de marc de fotos",
+      "thumbnail" : "contenidor",
+      "contenidor" : "Punt verd / Deixalleria"
+    }
   ]
 }

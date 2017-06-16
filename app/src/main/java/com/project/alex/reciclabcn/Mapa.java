@@ -2,7 +2,6 @@ package com.project.alex.reciclabcn;
 
 
 import android.Manifest;
-import android.annotation.TargetApi;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,12 +21,10 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
+import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
-
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.T;
-import static android.os.Build.VERSION_CODES.M;
 
 /**
  * Created by alexbruch on 7/2/17.
@@ -40,7 +37,7 @@ public class Mapa extends Fragment {
 
     @Nullable
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
 
         View rootView = inflater.inflate(R.layout.mapa, container, false);
 
@@ -126,9 +123,22 @@ public class Mapa extends Fragment {
                 // Mostrar la nostra posició
                 googleMap.setMyLocationEnabled(true);
 
-                // Per mostrar Barcelona
+                // Posició Barcelona per centrar Google maps
                 LatLng barcelona = new LatLng(41.3851, 2.1734);
-                googleMap.addMarker(new MarkerOptions().position(barcelona).title("Barcelona").snippet("Barcelona city"));
+
+                // Posicions marcadors
+                LatLng deixalleria1 = new LatLng(41.40, 2.1730);
+                LatLng deixalleria2 = new LatLng(41.39, 2.1830);
+                LatLng deixalleria3 = new LatLng(41.381, 2.17);
+                LatLng deixalleria4 = new LatLng(41.375, 2.1540);
+                LatLng deixalleria5 = new LatLng(41.391, 2.1630);
+                LatLng deixalleria6 = new LatLng(41.389, 2.1530);
+                googleMap.addMarker(new MarkerOptions().position(deixalleria1).title("Deixalleria1").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria2).title("Deixalleria2").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria3).title("Deixalleria3").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria4).title("Deixalleria4").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria5).title("Deixalleria5").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria6).title("Deixalleria6").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
 
                 // Posicionar la camera a la posició de la ciutat
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(12).build();

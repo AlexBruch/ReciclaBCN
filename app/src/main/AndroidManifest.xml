@@ -33,6 +33,10 @@
             android:name="com.google.android.maps.v2.API_KEY"
             android:value="AIzaSyDpnnvarEEDWLB5SQdVlOg4OZ7kCCGRDi0" />
 
+        <activity
+            android:name=".Info"
+            android:label="@string/title_activity_info"
+            android:theme="@style/MyMaterialTheme"></activity>
     </application>
 
 </manifest>

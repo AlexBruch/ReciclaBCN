@@ -2,8 +2,11 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/item1"
-        android:title="més info" />
+        android:title="Per què reciclar?" />
 
     <item android:id="@+id/item2"
-        android:title="més info" />
+        android:title="Consells medi ambient" />
+
+    <item android:id="@+id/item3"
+        android:title="Informació sobre l'app" />
 </menu>

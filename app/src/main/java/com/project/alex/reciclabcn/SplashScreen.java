@@ -1,9 +1,13 @@
 package com.project.alex.reciclabcn;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.widget.Toast;
 
@@ -38,7 +42,60 @@ public class SplashScreen extends Activity {
         @Override
         protected void onPreExecute() {
             super.onPreExecute();
-            itemsDatasource.cleanContenidors();
+            // Here, thisActivity is the current activity
+            if (ContextCompat.checkSelfPermission(SplashScreen.this,
+                    Manifest.permission.ACCESS_COARSE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED) {
+
+                // Should we show an explanation?
+                if (ActivityCompat.shouldShowRequestPermissionRationale(SplashScreen.this,
+                        Manifest.permission.ACCESS_COARSE_LOCATION)) {
+
+                    // Show an expanation to the user *asynchronously* -- don't block
+                    // this thread waiting for the user's response! After the user
+                    // sees the explanation, try again to request the permission.
+
+                } else {
+
+                    // No explanation needed, we can request the permission.
+
+                    ActivityCompat.requestPermissions(SplashScreen.this,
+                            new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
+                            1);
+
+                    // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                    // app-defined int constant. The callback method gets the
+                    // result of the request.
+                }
+            }
+
+            // Here, thisActivity is the current activity
+            if (ContextCompat.checkSelfPermission(SplashScreen.this,
+                    Manifest.permission.ACCESS_FINE_LOCATION)
+                    != PackageManager.PERMISSION_GRANTED) {
+
+                // Should we show an explanation?
+                if (ActivityCompat.shouldShowRequestPermissionRationale(SplashScreen.this,
+                        Manifest.permission.ACCESS_FINE_LOCATION)) {
+
+                    // Show an expanation to the user *asynchronously* -- don't block
+                    // this thread waiting for the user's response! After the user
+                    // sees the explanation, try again to request the permission.
+
+                } else {
+
+                    // No explanation needed, we can request the permission.
+
+                    ActivityCompat.requestPermissions(SplashScreen.this,
+                            new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                            1);
+
+                    // MY_PERMISSIONS_REQUEST_READ_CONTACTS is an
+                    // app-defined int constant. The callback method gets the
+                    // result of the request.
+                }
+            }
+            itemsDatasource.cleanDB();
         }
 
         @Override
@@ -47,8 +104,6 @@ public class SplashScreen extends Activity {
 
             Intent intent = new Intent(SplashScreen.this, MainActivity.class);
             startActivity(intent);
-
-            Toast.makeText(getApplicationContext(), "onPostExecute", Toast.LENGTH_LONG).show();
         }
 
         @Override
@@ -57,29 +112,44 @@ public class SplashScreen extends Activity {
 
             // request to json data url and getting response
             String jsonString = httpHandler.makeServiceCall(Jsonurl);
-            Log.e(TAG, "Response from url: " + jsonString);
+            //Log.e(TAG, "Response from url: " + jsonString);
             if (jsonString != null) {
                 try {
                     JSONObject jsonObject = new JSONObject(jsonString);
-                    // Contingut dels contenidors
+
+                    /** PARSE AND SAVE CONTENIDORS **/
+
                     JSONArray contenidors = jsonObject.getJSONArray("contenidors");
 
                     for (int i = 0; i < contenidors.length(); i++) {
 
                         JSONObject c = contenidors.getJSONObject(i);
 
-                        int id = c.getInt("id");
                         String contenidor = c.getString("contenidor");
                         String color1 = c.getString("color1");
                         String color2 = c.getString("color2");
                         String thumbnail = c.getString("thumbnail");
 
-                        Log.e("TEXT", "JSON " + contenidor);
+                        //Log.e("TEXT", "JSON " + contenidor);
 
-                        // guardamos los datos en la base de datos
-                        itemsDatasource.saveContenidors(contenidor, color1, color2, thumbnail);
+                        itemsDatasource.saveContenidors(contenidor, color1, color2, thumbnail); // guardar dades a la BD
 
                     }
+
+                    /** PARSE AND SAVE MATERIALS**/
+
+                    JSONArray materials = jsonObject.getJSONArray("materials");
+
+                    for (int i = 0; i < materials.length(); i++) {
+                        JSONObject m = materials.getJSONObject(i);
+
+                        String material = m.getString("material");
+                        String thumbnail = m.getString("thumbnail");
+                        String contenidor = m.getString("contenidor");
+
+                        itemsDatasource.saveMaterials(material, thumbnail, contenidor); // guardar dades a la BD
+                    }
+
                 } catch (final JSONException e) {
                     Log.e(TAG, "Json parsing error: " + e.getMessage());
                 }

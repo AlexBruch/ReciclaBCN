@@ -1,5 +1,6 @@
 package com.project.alex.reciclabcn;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -20,8 +21,6 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    /** FALTA AFEGIR PANTALLA D'INICI AMB LOGO **/
-
     private TabLayout tabLayout;
     private ViewPager viewPager;
     private Toolbar toolbar;
@@ -41,6 +40,10 @@ public class MainActivity extends AppCompatActivity {
         tabLayout.setupWithViewPager(viewPager);
     }
 
+    /** MENÚ TRES PUNTS VERTICALS
+     *  carpeta menu -> menu.xml
+     * **/
+
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
@@ -49,18 +52,33 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /** CLICLAR ALS ÍTEMS DE MENÚ **/
+
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-                Toast.makeText(MainActivity.this, "item1", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(MainActivity.this, Info.class);
+                intent.putExtra("infoid", R.string.reciclar);
+                startActivity(intent);
                 return true;
             case R.id.item2:
-                Toast.makeText(MainActivity.this, "item2", Toast.LENGTH_LONG).show();
+                Intent intent2 = new Intent(MainActivity.this, Info.class);
+                intent2.putExtra("infoid", R.string.consells);
+                startActivity(intent2);
+                return true;
+            case R.id.item3:
+                Intent intent3 = new Intent(MainActivity.this, Info.class);
+                intent3.putExtra("infoid", R.string.infoapp);
+                startActivity(intent3);
                 return true;
             default : return super.onOptionsItemSelected(item);
         }
     }
+
+    /** MUNTAR TABS PANTALLA PRINCIPAL
+     *  layouts activity_main.xml / cards_main.xml / mapa.xml
+     *  **/
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
@@ -69,7 +87,9 @@ public class MainActivity extends AppCompatActivity {
         viewPager.setAdapter(adapter);
     }
 
-     class ViewPagerAdapter extends FragmentPagerAdapter {
+    /** ADAPTADOR PER ALS TABS **/
+
+    class ViewPagerAdapter extends FragmentPagerAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
         private final List<String> mFragmentTitleList = new ArrayList<>();
 

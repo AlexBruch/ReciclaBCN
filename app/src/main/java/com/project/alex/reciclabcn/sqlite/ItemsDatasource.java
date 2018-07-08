@@ -5,14 +5,11 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
-import com.project.alex.reciclabcn.cards.Card;
-import com.project.alex.reciclabcn.lists.Material;
+import com.project.alex.reciclabcn.Card;
+import com.project.alex.reciclabcn.Material;
 
 import java.util.ArrayList;
 import java.util.List;
-
-import static android.R.attr.id;
-import static com.project.alex.reciclabcn.R.drawable.contenidor;
 
 
 /**
@@ -22,7 +19,7 @@ import static com.project.alex.reciclabcn.R.drawable.contenidor;
 public class ItemsDatasource extends DataBaseManager{
 
     public static final String CONTENIDORS_TABLE_NAME = "Contenidors";
-    public static final String MATERIALS_TABLE_NAME = "Materials";
+    public static final String MATERIALS_TABLE_NAME2 = "Materials";
     public static final String STRING_TYPE = "text";
     public static final String INT_TYPE = "integer";
 
@@ -51,14 +48,18 @@ public class ItemsDatasource extends DataBaseManager{
         public static final String MATERIAL_NAME = "name";
         public static final String MATERIAL_THUMBNAIL = "thumbnail";
         public static final String MATERIAL_CONTENIDOR = "contenidor";
+        public static final String MATERIAL_LOCA = "loca";
+        public static final String MATERIAL_DESC = "desc";
     }
 
     public static final String CREATE_MATERIALS_SCRIPT =
-            "create table " + MATERIALS_TABLE_NAME + "(" +
+            "create table " + MATERIALS_TABLE_NAME2 + "(" +
                     ColumnMaterials.MATERIAL_ID + " " + INT_TYPE + " primary key autoincrement, "+
                     ColumnMaterials.MATERIAL_NAME + " " + STRING_TYPE + " not null, " +
                     ColumnMaterials.MATERIAL_THUMBNAIL + " " + STRING_TYPE + " not null, " +
-                    ColumnMaterials.MATERIAL_CONTENIDOR + " " + STRING_TYPE + " not null);";
+                    ColumnMaterials.MATERIAL_CONTENIDOR + " " + STRING_TYPE + " not null, " +
+                    ColumnMaterials.MATERIAL_LOCA + " " + STRING_TYPE + " not null, " +
+                    ColumnMaterials.MATERIAL_DESC + " " + STRING_TYPE + " not null);";
 
     private DBHelper dbHelper;
     private SQLiteDatabase sqLiteDatabase;
@@ -87,19 +88,21 @@ public class ItemsDatasource extends DataBaseManager{
     }
 
     /** CREAR TAULA MATERIALS **/
-    public void saveMaterials( String material_name, String thumbnail, String contenidor) {
+    public void saveMaterials( String material_name, String thumbnail, String contenidor, String loca, String desc) {
         ContentValues values = new ContentValues();
 
         values.put(ColumnMaterials.MATERIAL_NAME, material_name);
         values.put(ColumnMaterials.MATERIAL_THUMBNAIL, thumbnail);
         values.put(ColumnMaterials.MATERIAL_CONTENIDOR, contenidor);
+        values.put(ColumnMaterials.MATERIAL_LOCA, loca);
+        values.put(ColumnMaterials.MATERIAL_DESC, desc);
 
-        sqLiteDatabase.insert(MATERIALS_TABLE_NAME, null, values);
+        sqLiteDatabase.insert(MATERIALS_TABLE_NAME2, null, values);
     }
 
     public void cleanDB() {
         sqLiteDatabase.delete(CONTENIDORS_TABLE_NAME, null, null);
-        sqLiteDatabase.delete(MATERIALS_TABLE_NAME, null, null);
+        sqLiteDatabase.delete(MATERIALS_TABLE_NAME2, null, null);
     }
 
     @Override
@@ -122,7 +125,20 @@ public class ItemsDatasource extends DataBaseManager{
                 ColumnMaterials.MATERIAL_THUMBNAIL,
                 ColumnMaterials.MATERIAL_CONTENIDOR};
 
-        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME, columns, ColumnMaterials.MATERIAL_CONTENIDOR + "=" +"'" + contenidor + "'" , null, null, null, null);
+        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME2, columns, ColumnMaterials.MATERIAL_CONTENIDOR + "=" +"'" + contenidor + "'" , null, null, null, null);
+    }
+
+    @Override
+    public Cursor cargarCursorMD(String material) {
+        String[] columns = new String[]{
+                ColumnMaterials.MATERIAL_ID,
+                ColumnMaterials.MATERIAL_NAME,
+                ColumnMaterials.MATERIAL_THUMBNAIL,
+                ColumnMaterials.MATERIAL_CONTENIDOR,
+                ColumnMaterials.MATERIAL_LOCA,
+                ColumnMaterials.MATERIAL_DESC};
+
+        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME2, columns, ColumnMaterials.MATERIAL_NAME + "=" +"'" + material + "'" , null, null, null, null);
     }
 
 
@@ -158,6 +174,26 @@ public class ItemsDatasource extends DataBaseManager{
             material.setContenidor(cursor.getString(3));
 
             list.add(material);
+        }
+        return list;
+    }
+
+    /** CARREGAR DETALLS MATERIAL A LLISTA PER CARREGARLOS A RECYCLERVIEW **/
+
+    public List<Material> getDetallMaterial(String material) {
+        List<Material> list = new ArrayList<>();
+
+        Cursor cursor = cargarCursorMD(material);
+
+        while (cursor.moveToNext()) {
+            Material material1 = new Material();
+            material1.setMaterial(cursor.getString(1));
+            material1.setThumbnail(cursor.getString(2));
+            material1.setContenidor(cursor.getString(3));
+            material1.setLocalitzacio(cursor.getString(4));
+            material1.setDescription(cursor.getString(5));
+
+            list.add(material1);
         }
         return list;
     }

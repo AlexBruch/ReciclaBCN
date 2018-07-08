@@ -29,6 +29,8 @@ public abstract class DataBaseManager {
 
     abstract public  Cursor cargarCursorM(String color);
 
+    abstract public  Cursor cargarCursorMD(String material);
+
     public DBHelper getDbHelper() {
         return dbHelper;
     }

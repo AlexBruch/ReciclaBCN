@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn.lists;
+package com.project.alex.reciclabcn;
 
 import android.content.Context;
 import android.content.res.TypedArray;

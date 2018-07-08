@@ -13,8 +13,9 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.project.alex.reciclabcn.Card;
 import com.project.alex.reciclabcn.R;
-import com.project.alex.reciclabcn.lists.ListContenidor;
+import com.project.alex.reciclabcn.lists.LlistaMaterialsContenidor;
 
 import java.util.List;
 
@@ -47,7 +48,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Intent intent = new Intent(view.getContext(), ListContenidor.class);
+                    Intent intent = new Intent(view.getContext(), LlistaMaterialsContenidor.class);
                     intent.putExtra("title", name.getText().toString());
                     intent.putExtra("color1", cardView.getCardBackgroundColor());
                     Toast.makeText(context, cardView.getCardBackgroundColor().toString(), Toast.LENGTH_LONG).show();

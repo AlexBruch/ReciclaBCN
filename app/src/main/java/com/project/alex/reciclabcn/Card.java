@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn.cards;
+package com.project.alex.reciclabcn;
 
 /**
  * Created by alexbruch on 11/2/17.

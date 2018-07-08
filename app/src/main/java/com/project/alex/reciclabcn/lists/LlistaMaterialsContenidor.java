@@ -1,3 +1,7 @@
+/**
+ * Llista amb els materials d'un contenidor
+ * **/
+
 package com.project.alex.reciclabcn.lists;
 
 import android.os.Bundle;
@@ -12,15 +16,17 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.project.alex.reciclabcn.DividerItemDecoration;
+import com.project.alex.reciclabcn.Material;
 import com.project.alex.reciclabcn.R;
 import com.project.alex.reciclabcn.sqlite.ItemsDatasource;
 
 import java.util.List;
 
-public class ListContenidor extends AppCompatActivity {
+public class LlistaMaterialsContenidor extends AppCompatActivity {
 
     private RecyclerView recyclerView;
-    private MaterialsAdapter materialsAdapter;
+    private LlistaMaterialsContenidorAdapter llistaMaterialsContenidorAdapter;
     private List<Material> materialList;
     private RecyclerView.LayoutManager layoutManager;
     private ItemsDatasource itemsDatasource;
@@ -52,8 +58,8 @@ public class ListContenidor extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // Adaptador
-        materialsAdapter = new MaterialsAdapter(getApplicationContext(), materialList);
-        recyclerView.setAdapter(materialsAdapter);
+        llistaMaterialsContenidorAdapter = new LlistaMaterialsContenidorAdapter(getApplicationContext(), materialList);
+        recyclerView.setAdapter(llistaMaterialsContenidorAdapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, LinearLayoutManager.VERTICAL));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
     }
@@ -75,13 +81,13 @@ public class ListContenidor extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.item1:
-                Toast.makeText(ListContenidor.this, "Per què reciclar?", Toast.LENGTH_LONG).show();
+                Toast.makeText(LlistaMaterialsContenidor.this, "Per què reciclar?", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.item2:
-                Toast.makeText(ListContenidor.this, "Consells medi ambient", Toast.LENGTH_LONG).show();
+                Toast.makeText(LlistaMaterialsContenidor.this, "Consells medi ambient", Toast.LENGTH_LONG).show();
                 return true;
             case R.id.item3:
-                Toast.makeText(ListContenidor.this, "Informació sobre l'app", Toast.LENGTH_LONG).show();
+                Toast.makeText(LlistaMaterialsContenidor.this, "Informació sobre l'app", Toast.LENGTH_LONG).show();
                 return true;
             default : return super.onOptionsItemSelected(item);
         }

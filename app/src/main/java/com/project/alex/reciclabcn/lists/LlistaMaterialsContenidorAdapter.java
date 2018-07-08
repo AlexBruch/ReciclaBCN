@@ -10,7 +10,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.project.alex.reciclabcn.MaterialDetail;
+import com.project.alex.reciclabcn.DetallMaterial.MaterialDetail;
+import com.project.alex.reciclabcn.Material;
 import com.project.alex.reciclabcn.R;
 
 import java.util.List;
@@ -19,7 +20,7 @@ import java.util.List;
  * Created by alexbruch on 13/2/17.
  */
 
-public class MaterialsAdapter extends RecyclerView.Adapter<MaterialsAdapter.MyViewHolder> {
+public class LlistaMaterialsContenidorAdapter extends RecyclerView.Adapter<LlistaMaterialsContenidorAdapter.MyViewHolder> {
     private Context context;
     private List<Material> materialList;
 
@@ -36,22 +37,27 @@ public class MaterialsAdapter extends RecyclerView.Adapter<MaterialsAdapter.MyVi
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+                    /** Al fer click sobre una element obrim nou layout am la info que toca **/
                     Intent intent = new Intent(view.getContext(), MaterialDetail.class);
+                    //intent.putExtra("title", name.getText().toString());
                     intent.putExtra("material", material.getText().toString());
+                    intent.putExtra("title", material.getText().toString());
                     view.getContext().startActivity(intent);
                 }
             });
         }
     }
 
-    public MaterialsAdapter(Context context, List<Material> materialList) {
+    public LlistaMaterialsContenidorAdapter(Context context, List<Material> materialList) {
         this.context = context;
         this.materialList = materialList;
     }
 
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        /** PASEM TOT AL LAYOUT A LA FILA DE LA LLISTA **/
+        /** PASEM TOT AL LAYOUT A LA FILA DE LA LLISTA
+         * Aquest layout es carregará a list_content_contenidor
+         * **/
         View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_material, parent, false);
         return new MyViewHolder(itemView);
     }

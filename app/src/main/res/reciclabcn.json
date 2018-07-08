@@ -69,682 +69,1064 @@
     {
       "material" : "Caixa de cartró",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Diari",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bossa de paper",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Sobre de paper",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Paper",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Etiqueta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cartolina",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Llibreta (sense espiral)",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Revista",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Envasos de cartro per a ous",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Propaganda",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Paper triturat",
       "thumbnail" : "contenidor",
-      "contenidor" : "Paper i cartró"
+      "contenidor" : "Paper i cartró",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Ampolla",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Llauna",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bric de llet",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Aerosols",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Ampolla de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bossa aperitiu",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bossa de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Capsa de puros",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Desodorant amb roll-on",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Embolcalls de film i plata",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Got de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Iogurt de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Llaunes fèrriques",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Precinte ampolles vi i cava",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Safates de porexpan",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Tapes de pot",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Taps de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Taps metàl·lics",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Tub de dentrifici",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Xarxa de fruita",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs lleuger"
+      "contenidor" : "Envàs lleuger",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Calçat",
       "thumbnail" : "contenidor",
-      "contenidor" : "Roba"
+      "contenidor" : "Roba",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cordons de sabata",
       "thumbnail" : "contenidor",
-      "contenidor" : "Roba"
+      "contenidor" : "Roba",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Draps",
       "thumbnail" : "contenidor",
-      "contenidor" : "Roba"
+      "contenidor" : "Roba",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Mitges",
       "thumbnail" : "contenidor",
-      "contenidor" : "Roba"
+      "contenidor" : "Roba",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Roba",
       "thumbnail" : "contenidor",
-      "contenidor" : "Roba"
+      "contenidor" : "Roba",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Medicaments",
       "thumbnail" : "contenidor",
-      "contenidor" : "Medicaments"
+      "contenidor" : "Medicaments",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Ampolla de vidre",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs de vidre"
+      "contenidor" : "Envàs de vidre",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Iogurt de vidre",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs de vidre"
+      "contenidor" : "Envàs de vidre",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Pot de vidre",
       "thumbnail" : "contenidor",
-      "contenidor" : "Envàs de vidre"
+      "contenidor" : "Envàs de vidre",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Aliment malmès en safata",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cafè (filtre)",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cafè (marro)",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Closques",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Escuradents de fusta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Excrements",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Flors",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Gespa",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Infusions (bossetes)",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Llumins de fusta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Paper magdalenes",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Pinyols",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Restes de menjar",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Taps de suro",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Terra plantes",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Tovalló paper brut",
       "thumbnail" : "contenidor",
-      "contenidor" : "Orgànic"
+      "contenidor" : "Orgànic",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Agulles de cosir",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Baieta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bastonets orelles",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bijuteria i complements",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bolquers",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Compreses",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Tampons",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bombeta de filament",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cendrer de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cendrer de porcellana",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cera",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Clips metàl·lics",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cotó fluix",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Etiqueta adhesiva",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Goma esborrar",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Got de vidre trencat",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Llapis",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Llima d'ungles",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Maquineta d'afeitar",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Maquineta fer punta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Pal d'escombra",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Pal de fregar",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Palleta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Paper plastificat",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Pols d'escombrar",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Precinte adhesiu",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Preservatiu",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Puntes de cigarret",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Raspall de dents",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Sorra de gat",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Ulleres",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Xiclet",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Xinxeta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Xumet",
       "thumbnail" : "contenidor",
-      "contenidor" : "Rebuig"
+      "contenidor" : "Rebuig",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Auriculars",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bateria de cotxe",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bolígrafs",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Bombeta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "CD's/DVD's",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cassola",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cendrer de vidre",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Cistell o cabàs",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Coberts",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Disc de vinil",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Espiral llibreta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Fluorescent",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Fotos",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Galleda",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Gerro ceràmica",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Joguines",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Matalàs",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Mirall",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Moble de fusta",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Mànega",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Mòbil i accessoris",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Nevera",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Oli de cotxe",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Ordinador",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
+
     },
     {
       "material" : "Paella",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Penjador de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Petits aparells elèctrics i electrònics",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Pintura",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Pinzell brut",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Plats trencats",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Pneumàtic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Porró de vidre",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Radiografia",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Rentadora",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Rodet de fotografies",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Runa",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Televisió",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Termòmetre de mercuri",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Test ceràmica",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Test de plàstic",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Tub de PVC",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Tòner",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Vernís",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Vidre de finestra",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     },
     {
       "material" : "Vidre de marc de fotos",
       "thumbnail" : "contenidor",
-      "contenidor" : "Punt verd / Deixalleria"
+      "contenidor" : "Punt verd / Deixalleria",
+      "loca" : "Hi ha aquest contenidor a tots els carrers de Barcelona",
+      "desc" : "Primer es fa una selecció dels diferents materials. Tot seguit es desfibren i es netegen pigments i coles, per fer-ne una pasta amb fibres noves que s'utilitzarà per fer fulls, envasos de cartró, revistes, diaris..."
     }
   ]
 }

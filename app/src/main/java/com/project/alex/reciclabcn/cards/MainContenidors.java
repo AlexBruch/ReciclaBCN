@@ -13,6 +13,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.project.alex.reciclabcn.Card;
 import com.project.alex.reciclabcn.R;
 import com.project.alex.reciclabcn.sqlite.ItemsDatasource;
 

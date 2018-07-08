@@ -29,8 +29,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".lists.ListContenidor" />
-        <activity android:name=".MaterialDetail" />
+        <activity android:name=".lists.LlistaMaterialsContenidor" />
+        <activity android:name=".DetallMaterial.MaterialDetail" />
 
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"

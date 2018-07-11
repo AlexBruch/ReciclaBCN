@@ -2,6 +2,7 @@ package com.project.alex.reciclabcn;
 
 
 import android.Manifest;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -24,7 +25,9 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.CameraPosition;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.project.alex.reciclabcn.lists.LlistaMaterialsContenidor;
 
 /**
  * Created by alexbruch on 7/2/17.
@@ -108,7 +111,7 @@ public class Mapa extends Fragment {
 
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
-            public void onMapReady(GoogleMap map) {
+            public void onMapReady(final GoogleMap map) {
                 googleMap = map;
 
                 ActivityCompat.requestPermissions(getActivity(),
@@ -127,7 +130,7 @@ public class Mapa extends Fragment {
                 LatLng barcelona = new LatLng(41.3851, 2.1734);
 
                 // Posicions marcadors
-                LatLng deixalleria1 = new LatLng(41.40, 2.1730);
+                final LatLng deixalleria1 = new LatLng(41.40, 2.1730);
                 LatLng deixalleria2 = new LatLng(41.39, 2.1830);
                 LatLng deixalleria3 = new LatLng(41.381, 2.17);
                 LatLng deixalleria4 = new LatLng(41.375, 2.1540);
@@ -143,6 +146,25 @@ public class Mapa extends Fragment {
                 // Posicionar la camera a la posició de la ciutat
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(12).build();
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
+
+                googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                    @Override
+                    public void onInfoWindowClick(Marker marker) {
+                        Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
+                        Intent intent = new Intent(getContext(), MapaInfo.class);
+                        startActivity(intent);
+                    }
+                });
+/**
+               googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
+                   @Override
+                   public boolean onMarkerClick(Marker marker) {
+                       Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
+                       Intent intent = new Intent(getContext(), Info.class);
+                       startActivity(intent);
+                       return true;
+                   }
+               });**/
 
             }
         });

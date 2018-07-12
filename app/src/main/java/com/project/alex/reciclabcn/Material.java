@@ -5,19 +5,22 @@ package com.project.alex.reciclabcn;
  */
 
 public class Material {
-    private String material, thumbnail, contenidor, localitzacio, description;
+    private String material, thumbnail, contenidor, localitzacio, description, cubo, color1, color2;
     private int id;
 
     public Material() {
     }
 
-    public Material(int id, String material, String thumbnail, String contenidor, String localitzacio, String description) {
+    public Material(int id, String material, String thumbnail, String contenidor,String cubo, String color1, String color2, String localitzacio, String description) {
         this.id = id;
         this.material = material;
         this.thumbnail = thumbnail;
         this.contenidor = contenidor;
         this.localitzacio = localitzacio;
         this.description = description;
+        this.cubo = cubo;
+        this.color1 = color1;
+        this.color2 = color2;
     }
 
     public String getMaterial() {
@@ -66,5 +69,29 @@ public class Material {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public String getCubo() {
+        return cubo;
+    }
+
+    public void setCubo(String cubo) {
+        this.cubo = cubo;
+    }
+
+    public String getColor1() {
+        return color1;
+    }
+
+    public void setColor1(String color1) {
+        this.color1 = color1;
+    }
+
+    public String getColor2() {
+        return color2;
+    }
+
+    public void setColor2(String color2) {
+        this.color2 = color2;
     }
 }

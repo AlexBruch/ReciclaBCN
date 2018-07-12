@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,11 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/material_detail"
+    tools:showIn="@layout/mapa_info"
     tools:context=".MainActivity">
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/material_detail_recycler_view"
+        android:id="@+id/mapa_info_recyclerview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingTop="@dimen/list_paddingtop"

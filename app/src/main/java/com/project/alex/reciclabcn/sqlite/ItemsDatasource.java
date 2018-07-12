@@ -19,7 +19,7 @@ import java.util.List;
 public class ItemsDatasource extends DataBaseManager{
 
     public static final String CONTENIDORS_TABLE_NAME = "Contenidors";
-    public static final String MATERIALS_TABLE_NAME2 = "Materials";
+    public static final String MATERIALS_TABLE_NAME4 = "Materials";
     public static final String STRING_TYPE = "text";
     public static final String INT_TYPE = "integer";
 
@@ -48,16 +48,22 @@ public class ItemsDatasource extends DataBaseManager{
         public static final String MATERIAL_NAME = "name";
         public static final String MATERIAL_THUMBNAIL = "thumbnail";
         public static final String MATERIAL_CONTENIDOR = "contenidor";
+        public static final String MATERIAL_CUBO = "cubo";
+        public static final String MATERIAL_COLOR1 = "color1";
+        public static final String MATERIAL_COLOR2 = "color2";
         public static final String MATERIAL_LOCA = "loca";
         public static final String MATERIAL_DESC = "desc";
     }
 
     public static final String CREATE_MATERIALS_SCRIPT =
-            "create table " + MATERIALS_TABLE_NAME2 + "(" +
+            "create table " + MATERIALS_TABLE_NAME4 + "(" +
                     ColumnMaterials.MATERIAL_ID + " " + INT_TYPE + " primary key autoincrement, "+
                     ColumnMaterials.MATERIAL_NAME + " " + STRING_TYPE + " not null, " +
                     ColumnMaterials.MATERIAL_THUMBNAIL + " " + STRING_TYPE + " not null, " +
                     ColumnMaterials.MATERIAL_CONTENIDOR + " " + STRING_TYPE + " not null, " +
+                    ColumnMaterials.MATERIAL_CUBO + " " + STRING_TYPE + " not null, " +
+                    ColumnMaterials.MATERIAL_COLOR1 + " " + STRING_TYPE + " not null, " +
+                    ColumnMaterials.MATERIAL_COLOR2 + " " + STRING_TYPE + " not null, " +
                     ColumnMaterials.MATERIAL_LOCA + " " + STRING_TYPE + " not null, " +
                     ColumnMaterials.MATERIAL_DESC + " " + STRING_TYPE + " not null);";
 
@@ -88,21 +94,24 @@ public class ItemsDatasource extends DataBaseManager{
     }
 
     /** CREAR TAULA MATERIALS **/
-    public void saveMaterials( String material_name, String thumbnail, String contenidor, String loca, String desc) {
+    public void saveMaterials(String material_name, String thumbnail, String contenidor, String cubo, String mcolor1, String mcolor2, String loca, String desc) {
         ContentValues values = new ContentValues();
 
         values.put(ColumnMaterials.MATERIAL_NAME, material_name);
         values.put(ColumnMaterials.MATERIAL_THUMBNAIL, thumbnail);
         values.put(ColumnMaterials.MATERIAL_CONTENIDOR, contenidor);
+        values.put(ColumnMaterials.MATERIAL_CUBO, cubo);
+        values.put(ColumnMaterials.MATERIAL_COLOR1, mcolor1);
+        values.put(ColumnMaterials.MATERIAL_COLOR2, mcolor2);
         values.put(ColumnMaterials.MATERIAL_LOCA, loca);
         values.put(ColumnMaterials.MATERIAL_DESC, desc);
 
-        sqLiteDatabase.insert(MATERIALS_TABLE_NAME2, null, values);
+        sqLiteDatabase.insert(MATERIALS_TABLE_NAME4, null, values);
     }
 
     public void cleanDB() {
         sqLiteDatabase.delete(CONTENIDORS_TABLE_NAME, null, null);
-        sqLiteDatabase.delete(MATERIALS_TABLE_NAME2, null, null);
+        sqLiteDatabase.delete(MATERIALS_TABLE_NAME4, null, null);
     }
 
     @Override
@@ -123,9 +132,14 @@ public class ItemsDatasource extends DataBaseManager{
                 ColumnMaterials.MATERIAL_ID,
                 ColumnMaterials.MATERIAL_NAME,
                 ColumnMaterials.MATERIAL_THUMBNAIL,
-                ColumnMaterials.MATERIAL_CONTENIDOR};
+                ColumnMaterials.MATERIAL_CONTENIDOR,
+                ColumnMaterials.MATERIAL_CUBO,
+                ColumnMaterials.MATERIAL_COLOR1,
+                ColumnMaterials.MATERIAL_COLOR2,
+                ColumnMaterials.MATERIAL_LOCA,
+                ColumnMaterials.MATERIAL_DESC};
 
-        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME2, columns, ColumnMaterials.MATERIAL_CONTENIDOR + "=" +"'" + contenidor + "'" , null, null, null, null);
+        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME4, columns, ColumnMaterials.MATERIAL_CONTENIDOR + "=" +"'" + contenidor + "'" , null, null, null, null);
     }
 
     @Override
@@ -135,10 +149,13 @@ public class ItemsDatasource extends DataBaseManager{
                 ColumnMaterials.MATERIAL_NAME,
                 ColumnMaterials.MATERIAL_THUMBNAIL,
                 ColumnMaterials.MATERIAL_CONTENIDOR,
+                ColumnMaterials.MATERIAL_CUBO,
+                ColumnMaterials.MATERIAL_COLOR1,
+                ColumnMaterials.MATERIAL_COLOR2,
                 ColumnMaterials.MATERIAL_LOCA,
                 ColumnMaterials.MATERIAL_DESC};
 
-        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME2, columns, ColumnMaterials.MATERIAL_NAME + "=" +"'" + material + "'" , null, null, null, null);
+        return super.getSqLiteDatabase().query(MATERIALS_TABLE_NAME4, columns, ColumnMaterials.MATERIAL_NAME + "=" +"'" + material + "'" , null, null, null, null);
     }
 
 
@@ -172,6 +189,11 @@ public class ItemsDatasource extends DataBaseManager{
             material.setMaterial(cursor.getString(1));
             material.setThumbnail(cursor.getString(2));
             material.setContenidor(cursor.getString(3));
+            material.setCubo(cursor.getString(4));
+            material.setColor1(cursor.getString(5));
+            material.setColor2(cursor.getString(6));
+            material.setLocalitzacio(cursor.getString(7));
+            material.setDescription(cursor.getString(8));
 
             list.add(material);
         }
@@ -190,8 +212,11 @@ public class ItemsDatasource extends DataBaseManager{
             material1.setMaterial(cursor.getString(1));
             material1.setThumbnail(cursor.getString(2));
             material1.setContenidor(cursor.getString(3));
-            material1.setLocalitzacio(cursor.getString(4));
-            material1.setDescription(cursor.getString(5));
+            material1.setCubo(cursor.getString(4));
+            material1.setColor1(cursor.getString(5));
+            material1.setColor2(cursor.getString(6));
+            material1.setLocalitzacio(cursor.getString(7));
+            material1.setDescription(cursor.getString(8));
 
             list.add(material1);
         }

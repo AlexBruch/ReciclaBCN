@@ -48,6 +48,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
+
                     Intent intent = new Intent(view.getContext(), LlistaMaterialsContenidor.class);
                     intent.putExtra("title", name.getText().toString());
                     intent.putExtra("color1", cardView.getCardBackgroundColor());
@@ -76,7 +77,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
 
         //carregar imatge fent servir la llibreria Glide
         //Glide.with(context).load(contenidor.getThumbnail()).into(holder.thumbnail);
-        Glide.with(context).load(R.drawable.contenidor).into(holder.thumbnail);
+        //Glide.with(context).load(R.drawable.contenidor).into(holder.thumbnail);
     }
 
     @Override

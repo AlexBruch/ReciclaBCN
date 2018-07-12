@@ -26,7 +26,8 @@
             android:scaleType="fitXY" />
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
             <TextView
                 android:id="@+id/material_text"
                 android:layout_width="match_parent"
@@ -51,9 +52,8 @@
             android:scaleType="fitXY" />
         <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-
-
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
 
             <TextView
                 android:id="@+id/material_loca"
@@ -81,9 +81,8 @@ android:orientation="horizontal">
         android:scaleType="fitXY" />
 <RelativeLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
-
-
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp">
 
     <TextView
         android:id="@+id/material_desc"

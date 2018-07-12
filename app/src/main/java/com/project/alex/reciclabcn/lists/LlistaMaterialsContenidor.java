@@ -4,6 +4,8 @@
 
 package com.project.alex.reciclabcn.lists;
 
+import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
@@ -17,6 +19,8 @@ import android.view.MenuItem;
 import android.widget.Toast;
 
 import com.project.alex.reciclabcn.DividerItemDecoration;
+import com.project.alex.reciclabcn.Info;
+import com.project.alex.reciclabcn.MainActivity;
 import com.project.alex.reciclabcn.Material;
 import com.project.alex.reciclabcn.R;
 import com.project.alex.reciclabcn.sqlite.ItemsDatasource;
@@ -43,7 +47,7 @@ public class LlistaMaterialsContenidor extends AppCompatActivity {
         materialList = itemsDatasource.getMaterialsList(getIntent().getStringExtra("title"));
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        //toolbar.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("color")));
+        //toolbar.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("color1")));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Fletxa
         getSupportActionBar().setDisplayShowHomeEnabled(true); //Fletxa
@@ -82,12 +86,21 @@ public class LlistaMaterialsContenidor extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.item1:
                 Toast.makeText(LlistaMaterialsContenidor.this, "Per què reciclar?", Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(LlistaMaterialsContenidor.this, Info.class);
+                intent.putExtra("infoid", R.string.reciclar);
+                startActivity(intent);
                 return true;
             case R.id.item2:
                 Toast.makeText(LlistaMaterialsContenidor.this, "Consells medi ambient", Toast.LENGTH_LONG).show();
+                Intent intent2 = new Intent(LlistaMaterialsContenidor.this, Info.class);
+                intent2.putExtra("infoid", R.string.consells);
+                startActivity(intent2);
                 return true;
             case R.id.item3:
                 Toast.makeText(LlistaMaterialsContenidor.this, "Informació sobre l'app", Toast.LENGTH_LONG).show();
+                Intent intent3 = new Intent(LlistaMaterialsContenidor.this, Info.class);
+                intent3.putExtra("infoid", R.string.infoapp);
+                startActivity(intent3);
                 return true;
             default : return super.onOptionsItemSelected(item);
         }

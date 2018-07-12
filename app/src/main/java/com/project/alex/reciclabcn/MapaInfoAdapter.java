@@ -1,4 +1,4 @@
-package com.project.alex.reciclabcn.lists;
+package com.project.alex.reciclabcn;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,20 +8,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextClock;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.project.alex.reciclabcn.DetallMaterial.MaterialDetail;
-import com.project.alex.reciclabcn.Material;
-import com.project.alex.reciclabcn.R;
 
 import java.util.List;
 
-/**
- * Created by alexbruch on 13/2/17.
- */
-
-public class LlistaMaterialsContenidorAdapter extends RecyclerView.Adapter<LlistaMaterialsContenidorAdapter.MyViewHolder> {
+public class MapaInfoAdapter extends RecyclerView.Adapter<MapaInfoAdapter.MyViewHolder> {
     private Context context;
     private List<Material> materialList;
 
@@ -32,6 +27,7 @@ public class LlistaMaterialsContenidorAdapter extends RecyclerView.Adapter<Llist
 
         public MyViewHolder(View view) {
             super(view);
+
             material = (TextView) view.findViewById(R.id.material);
             thumbnail = (ImageView) view.findViewById(R.id.thumbnail_material);
 
@@ -48,31 +44,25 @@ public class LlistaMaterialsContenidorAdapter extends RecyclerView.Adapter<Llist
             });
         }
     }
-
-    public LlistaMaterialsContenidorAdapter(Context context, List<Material> materialList) {
+    public MapaInfoAdapter(Context context, List<Material> materialList) {
         this.context = context;
         this.materialList = materialList;
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        /** PASEM TOT AL LAYOUT A LA FILA DE LA LLISTA
-         * Aquest layout es carregará a list_content_contenidor
-         * **/
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.list_row_material, parent, false);
-        return new MyViewHolder(itemView);
-    }
-
-    @Override
     public void onBindViewHolder(MyViewHolder holder, int position) {
-        /** PASEM TOT A LA FILA CORRESPONENT SEGONS POSICIO **/
+
         Material material = materialList.get(position);
         holder.material.setText(material.getMaterial());
         holder.material.setTextColor(Color.parseColor(material.getColor1()));
-        //holder.material.setBackgroundColor(Color.parseColor(material.getColor2()));
         //carregar imatge fent servir la llibreria Glide
         Glide.with(context).load(R.drawable.material_icon).into(holder.thumbnail);
+    }
 
+    @Override
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.mapa_info_row, parent, false);
+        return new MyViewHolder(view);
     }
 
     @Override

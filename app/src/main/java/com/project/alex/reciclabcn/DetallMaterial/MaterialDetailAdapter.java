@@ -66,14 +66,14 @@ public class MaterialDetailAdapter extends RecyclerView.Adapter<MaterialDetailAd
     public void onBindViewHolder(MyViewHolder holder, int position) {
         /** Ho pasem tot a la fila corresponent segons posicio **/
         Material text = materialDetail.get(position);
-        holder.textContenidor.setText(text.getMaterial());
-        Glide.with(context).load(R.drawable.contenidor).into(holder.ContenidorIcon);
+        holder.textContenidor.setText(text.getCubo());
+        Glide.with(context).load(R.drawable.ic_action_name).into(holder.ContenidorIcon);
 
         holder.textLocalitzacio.setText(text.getLocalitzacio());
-        Glide.with(context).load(R.drawable.contenidor).into(holder.localitzacioIcon);
+        Glide.with(context).load(R.drawable.ic_location).into(holder.localitzacioIcon);
 
         holder.textDescription.setText(text.getDescription());
-        Glide.with(context).load(R.drawable.contenidor).into(holder.descriptionIcon);
+        Glide.with(context).load(R.drawable.ic_reciclar).into(holder.descriptionIcon);
     }
 
     @Override

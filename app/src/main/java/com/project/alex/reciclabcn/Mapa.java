@@ -19,6 +19,7 @@ import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -41,6 +42,7 @@ public class Mapa extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, final ViewGroup container, Bundle savedInstanceState) {
+
 
         View rootView = inflater.inflate(R.layout.mapa, container, false);
 
@@ -109,6 +111,8 @@ public class Mapa extends Fragment {
             Log.e("Mapa", "No rutlla");
         }
 
+
+
         mapView.getMapAsync(new OnMapReadyCallback() {
             @Override
             public void onMapReady(final GoogleMap map) {
@@ -127,7 +131,7 @@ public class Mapa extends Fragment {
                 googleMap.setMyLocationEnabled(true);
 
                 // Posició Barcelona per centrar Google maps
-                LatLng barcelona = new LatLng(41.3851, 2.1734);
+                final LatLng barcelona = new LatLng(41.3851, 2.1734);
 
                 // Posicions marcadors
                 final LatLng deixalleria1 = new LatLng(41.40, 2.1730);
@@ -136,6 +140,8 @@ public class Mapa extends Fragment {
                 LatLng deixalleria4 = new LatLng(41.375, 2.1540);
                 LatLng deixalleria5 = new LatLng(41.391, 2.1630);
                 LatLng deixalleria6 = new LatLng(41.389, 2.1530);
+
+
                 googleMap.addMarker(new MarkerOptions().position(deixalleria1).title("Deixalleria1").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
                 googleMap.addMarker(new MarkerOptions().position(deixalleria2).title("Deixalleria2").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
                 googleMap.addMarker(new MarkerOptions().position(deixalleria3).title("Deixalleria3").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
@@ -147,14 +153,33 @@ public class Mapa extends Fragment {
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(12).build();
                 googleMap.animateCamera(CameraUpdateFactory.newCameraPosition(cameraPosition));
 
-                googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                googleMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
                     @Override
-                    public void onInfoWindowClick(Marker marker) {
-                        Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
-                        Intent intent = new Intent(getContext(), MapaInfo.class);
-                        startActivity(intent);
+                    public View getInfoWindow(Marker marker) {
+
+                        //marker.showInfoWindow();
+                        return null;
+                    }
+
+                    @Override
+                    public View getInfoContents(Marker marker) {
+
+                        View v = getLayoutInflater().inflate(R.layout.mapa, null);
+
+                        googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
+                            @Override
+                            public void onInfoWindowClick(Marker marker) {
+                                Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
+                                Intent intent = new Intent(getContext(), MapaInfo.class);
+                                //intent.putExtra(googleMap.getP);
+                                startActivity(intent);
+                            }
+                        });
+
+                        return v;
                     }
                 });
+
 /**
                googleMap.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
                    @Override

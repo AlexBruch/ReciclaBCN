@@ -146,10 +146,13 @@ public class SplashScreen extends Activity {
                         String material = m.getString("material");
                         String thumbnail = m.getString("thumbnail");
                         String contenidor = m.getString("contenidor");
+                        String cubo = m.getString("cubo");
+                        String color1 = m.getString("color1");
+                        String color2 = m.getString("color2");
                         String localitzacio = m.getString("loca");
                         String descripcio = m.getString("desc");
 
-                        itemsDatasource.saveMaterials(material, thumbnail, contenidor, localitzacio, descripcio); // guardar dades a la BD
+                        itemsDatasource.saveMaterials(material, thumbnail, contenidor, cubo, color1, color2, localitzacio, descripcio); // guardar dades a la BD
                     }
 
                 } catch (final JSONException e) {

@@ -38,7 +38,7 @@
             android:name=".Info"
             android:label="@string/title_activity_info"
             android:theme="@style/MyMaterialTheme" />
-        <activity android:name=".MapaInfo"></activity>
+        <activity android:name=".MapaInfo" />
     </application>
 
 </manifest>

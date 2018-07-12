@@ -52,7 +52,7 @@ public class CardsAdapter extends RecyclerView.Adapter<CardsAdapter.MyViewHolder
                     Intent intent = new Intent(view.getContext(), LlistaMaterialsContenidor.class);
                     intent.putExtra("title", name.getText().toString());
                     intent.putExtra("color1", cardView.getCardBackgroundColor());
-                    Toast.makeText(context, cardView.getCardBackgroundColor().toString(), Toast.LENGTH_LONG).show();
+                    //Toast.makeText(context, cardView.getCardBackgroundColor().toString(), Toast.LENGTH_LONG).show();
                     view.getContext().startActivity(intent);
                 }
             });

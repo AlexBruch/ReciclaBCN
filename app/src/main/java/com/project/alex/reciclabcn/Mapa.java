@@ -143,11 +143,11 @@ public class Mapa extends Fragment {
 
 
                 googleMap.addMarker(new MarkerOptions().position(deixalleria1).title("Deixalleria1").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
-                googleMap.addMarker(new MarkerOptions().position(deixalleria2).title("Deixalleria2").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria2).title("Deixalleria2").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_red)));
                 googleMap.addMarker(new MarkerOptions().position(deixalleria3).title("Deixalleria3").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
-                googleMap.addMarker(new MarkerOptions().position(deixalleria4).title("Deixalleria4").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria4).title("Deixalleria4").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_orange)));
                 googleMap.addMarker(new MarkerOptions().position(deixalleria5).title("Deixalleria5").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
-                googleMap.addMarker(new MarkerOptions().position(deixalleria6).title("Deixalleria6").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher)));
+                googleMap.addMarker(new MarkerOptions().position(deixalleria6).title("Deixalleria6").snippet("Punt verd / Deixalleria").icon(BitmapDescriptorFactory.fromResource(R.mipmap.ic_launcher_yellow)));
 
                 // Posicionar la camera a la posició de la ciutat
                 CameraPosition cameraPosition = new CameraPosition.Builder().target(barcelona).zoom(12).build();
@@ -169,7 +169,7 @@ public class Mapa extends Fragment {
                         googleMap.setOnInfoWindowClickListener(new GoogleMap.OnInfoWindowClickListener() {
                             @Override
                             public void onInfoWindowClick(Marker marker) {
-                                Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
+                                //Toast.makeText(getContext(), "weaaaa", Toast.LENGTH_LONG).show();
                                 Intent intent = new Intent(getContext(), MapaInfo.class);
                                 //intent.putExtra(googleMap.getP);
                                 startActivity(intent);

@@ -23,10 +23,13 @@ public class MapaInfo extends AppCompatActivity {
     private ItemsDatasource itemsDatasource;
     private CollapsingToolbarLayout collapsingToolbarLayout = null;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mapa_info);
+
+
 
         itemsDatasource = new ItemsDatasource(getApplicationContext());
         /**
@@ -38,6 +41,9 @@ public class MapaInfo extends AppCompatActivity {
         //toolbar.setBackgroundColor(Color.parseColor(getIntent().getStringExtra("color1")));
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true); //Fletxa
+
+
+
         getSupportActionBar().setDisplayShowHomeEnabled(true); //Fletxa
         getSupportActionBar().setTitle(getIntent().getStringExtra("title"));
 

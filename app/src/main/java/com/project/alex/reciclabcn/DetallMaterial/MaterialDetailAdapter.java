@@ -1,6 +1,7 @@
 package com.project.alex.reciclabcn.DetallMaterial;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -44,7 +45,7 @@ public class MaterialDetailAdapter extends RecyclerView.Adapter<MaterialDetailAd
                 @Override
                 public void onClick(View view) {
 
-                    Toast.makeText(context, "wazaaaaaaa",Toast.LENGTH_LONG).show();
+                    //Toast.makeText(context, "wazaaaaaaa",Toast.LENGTH_LONG).show();
                 }
 
             });
@@ -67,12 +68,15 @@ public class MaterialDetailAdapter extends RecyclerView.Adapter<MaterialDetailAd
         /** Ho pasem tot a la fila corresponent segons posicio **/
         Material text = materialDetail.get(position);
         holder.textContenidor.setText(text.getCubo());
+        holder.textContenidor.setTextColor(Color.parseColor(text.getColor1()));
         Glide.with(context).load(R.drawable.ic_action_name).into(holder.ContenidorIcon);
 
         holder.textLocalitzacio.setText(text.getLocalitzacio());
+        holder.textLocalitzacio.setTextColor(Color.parseColor(text.getColor1()));
         Glide.with(context).load(R.drawable.ic_location).into(holder.localitzacioIcon);
 
         holder.textDescription.setText(text.getDescription());
+        holder.textDescription.setTextColor(Color.parseColor(text.getColor1()));
         Glide.with(context).load(R.drawable.ic_reciclar).into(holder.descriptionIcon);
     }
 
